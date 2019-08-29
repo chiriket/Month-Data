@@ -1,8 +1,8 @@
-#### Data
+## Data
 
-### By Shirley Keter
+## By Shirley Keter ,Aug 2019
 
-## Description
+##| Description
 App that retrieves that data and stores it in an SQLite dB table showing start date , end date and value.
 
 
