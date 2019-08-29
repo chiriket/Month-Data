@@ -12,7 +12,7 @@
 ### Prerequisites
 * Ubuntu Software
 * Python3.6
-* Postgres
+* SQLite3
 * python virtualenv
 * Clone the Repo
 * Run the following command on the terminal: git clone https://github.com/chiriket/Month-Data.git && cd data
@@ -30,7 +30,7 @@ Install dependancies that will create an environment for the app to run pip3 ins
 ### Create .env file.
 
 ### Run initial Migration
-* python3.6 manage.py makemigrations gram
+* python3.6 manage.py makemigrations data
 * python3.6 manage.py migrate
 * Run the app
 * python3.6 manage.py runserver
