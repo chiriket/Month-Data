@@ -9,7 +9,7 @@ cur = con.cursor()
 
 con.commit()
 r = requests.get('https://www.esrl.noaa.gov/psd/enso/mei/data/meiv2.data')
-# to_db = r.json()
+# d = r.json()
 d = json.loads('[]')
 dataframe = list()
 def data():
