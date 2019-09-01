@@ -20,9 +20,6 @@ pd.read_sql('select * from data', conn)
 # print (d)
 
 # Read first line (to know limits)
-start_end = next()[:-1]
-start, end = re.split(delimeter, start_end)
-start, end = int(start), int(end)
 
 
 
