@@ -25,7 +25,8 @@ Install dependancies that will create an environment for the app to run pip3 ins
 * import sqlite3
 * conn = sqlite3.connect('data.db') 
 
-
+## Run
+* run select.py
 
 ## Known bugs
 There are no known bugs.
@@ -33,6 +34,7 @@ There are no known bugs.
 ## Technologies used
 - Python 3.6
 - SQLite3
+- Panda
 
 
 ## Support and contact details
