@@ -34,7 +34,7 @@ There are no known bugs.
 ## Technologies used
 - Python 3.6
 - SQLite3
-- Panda
+- Pandas
 
 
 ## Support and contact details

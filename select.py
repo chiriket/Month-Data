@@ -9,15 +9,16 @@ print(df )
 conn = sqlite3.connect("data.db")
 df = pd.read_sql_query("select * from data limit 5", conn)
 print (df)
-for key,value in df.iteritems():
-   print (key,value)
+for i in df.iteritems():
+    sql = "INSERT INTO `date` (`" +cols + "`) VALUES (" + "%s,"*(len(row)-1) + "%s)"
+    print (i)
 
 
 INSERT_QUERY = '''REPLACE INTO data VALUES (?, ?, ?);'''
 conn.execute('SELECT * from data').fetchall()
 df.to_sql('data', conn, if_exists='append', index=False)
-pd.read_sql('select * from data', conn)
-# print (d)
+d = pd.read_sql('select * from data', conn)
+print (d)
 
 # Read first line (to know limits)
 
