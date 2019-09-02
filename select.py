@@ -5,8 +5,8 @@ import sqlite3
 
 
 df = pd.read_csv('https://www.esrl.noaa.gov/psd/enso/mei/data/meiv2.data', header=None) 
-
-df.replace(-999.00, np.nan, inplace=True) 
+df.replace(-999.00, np.nan, inplace=True)
+print (df) 
 # date_rng = pd.date_range(start='1/12/1979', end='31/12/2019', freq='2M')
 
 # for ind, column in enumerate(df.columns):
