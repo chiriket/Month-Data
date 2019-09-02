@@ -6,9 +6,8 @@ import sqlite3
 
 df = pd.read_csv('https://www.esrl.noaa.gov/psd/enso/mei/data/meiv2.data', header=None) 
 
-df
-df.replace(-999.00, np.nan, inplace=False) 
-date_rng = pd.date_range(start='1/12/1979', end='31/12/2019', freq='2M')
+df.replace(-999.00, np.nan, inplace=True) 
+# date_rng = pd.date_range(start='1/12/1979', end='31/12/2019', freq='2M')
 
 # for ind, column in enumerate(df.columns):
 #     print(ind, column)
@@ -24,8 +23,10 @@ for key,value in df.iteritems():
 
 INSERT_QUERY = '''REPLACE INTO data VALUES (?, ?, ?);'''
 conn.execute('SELECT * from data').fetchall()
-df.to_sql('data', conn, if_exists='append', index=False)
+d = df.to_sql('data', conn, if_exists='append', index=False)
 pd.read_sql('select * from data', conn)
+print (d)
+
 
 
 
