@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 import requests
 import sqlite3
-from pandas.tseries.offsets import DateOffset
+
 import datetime
 
 # data extraction
